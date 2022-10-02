@@ -1,0 +1,29 @@
+@mixin box
+    width: 115px
+    height: 27px
+    padding-top: 7px
+    margin: 0 auto
+    background: #000000
+    font-weight: 400
+    font-size: 11px
+    text-align: center
+    text-transform: uppercase
+    color: #FFFFFF
+
+@mixin header
+    font-weight: 700
+    font-size: 38px
+    text-align: center
+    text-transform: uppercase
+    color: #222222
+
+@mixin subheader
+    font-weight: 400
+    font-size: 17px
+    text-align: center
+    color: #222222
+
+@mixin btn_hover
+    &:hover
+        background-image: none
+        background-color: $color_blue

@@ -1,0 +1,313 @@
+@media (max-width: 1200px)
+
+    nav
+        .menu
+            &_item
+                padding-right: 20px
+            &_link
+                font-size: 13px
+    .promo
+        &_header
+            font-size: 50px
+        &_subheader
+            font-size: 30px
+    .work
+        &_calce
+            margin: 32px 25px 60px 17px
+    .mobile
+        &_item
+            width: 300px
+
+@media (max-width: 991px)
+
+    nav
+        .menu
+            &_item
+                padding-right: 8px
+            &_link
+                font-size: 10px
+    .subheader
+        &_logo
+            img
+                width: 100%
+        &_official
+            font-size: 11px
+        &_phone
+            font-size: 18px
+        &_btn
+            margin-top: 21px
+            width: 100%
+            height: 40px
+    .promo
+        &_header
+            font-size: 40px
+    .car
+        &_img
+            width: 100%
+    .message
+        &_wrapper
+            left: 14px
+        &_links
+            width: 325px
+        &_link
+            &_black
+                font-size: 13px
+            &_grey
+                font-size: 10px
+            &_blue
+                font-size: 10px
+        &_app
+            top: 126px
+    .work
+        &_wrapper
+            flex-direction: column
+    .work
+        &_calce
+            margin: 32px 25px 60px -10px
+    .mobile
+        &_item
+            width: 228px
+            &_subtitle
+                font-size: 17px
+
+@media (max-width: 767px)
+    
+    nav
+        .menu
+            position: fixed
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            top: 0
+            left: -100%
+            width: 50%
+            height: 100vh
+            padding: 20px 15px
+            background-color: rgba(0, 0, 0, .8 )
+            transition: 0.6s all
+            &_active
+                left: 0
+            &_item
+                padding-right: 0
+                border: none
+                margin: 10px 0
+            &_link
+                font-size: 20px
+        .hamburger
+            display: block
+            position: absolute
+            top: 50%
+            right: 10px
+            transform: translateY(-50%)
+            width: 26px
+            height: 11px
+            span
+                display: block
+                height: 2px
+                width: 100%
+                margin-bottom: 2px
+                background-color: #fff
+                transition: 0.5s all
+            &_active
+                span
+                    margin-bottom: -2px
+                    &:nth-child(1)
+                        transform: rotate(-45deg)
+                    &:nth-child(2)
+                        display: none
+                    &:nth-child(3)
+                        transform: rotate(45deg)
+    .xs-hidden
+        display: none
+    .subheader
+        .xs-visited
+            display: block
+        &_phone
+            display: block
+            margin-top: 10px
+            font-weight: 400
+            font-size: 16px
+            text-align: center
+            text-transform: uppercase
+            color: #FFFFFF
+        &_btn
+            display: block
+            margin: 0 auto
+            margin-top: 10px
+            width: 200px
+            height: 40px
+            &:hover
+                background-image: linear-gradient(to top, $color_blue 0%, #4ce2ff 100%)
+    .promo
+        &_header
+            line-height: 40px
+        &_btn
+            &:hover
+                background-image: linear-gradient(to top, $color_blue 0%, #4ce2ff 100%)
+    .work
+        &_header
+            font-size: 25px
+        &_calce
+            margin: 7px 21px -1px 187px
+    .message
+        &_app
+            top: 185px
+            right: 143px
+        &_wrapper
+            top: 135px
+            left: 198px
+
+@media (max-width: 575px)
+    nav            
+        height: 30px
+        .menu               
+            width: 85%
+            &_item
+                width: 100%
+                text-align: center
+                padding: 5px 0
+            &_link
+                display: block
+    header
+        height: 30px
+    .subheader
+        top: -20px
+        height: 60px
+        &_official
+            display: none
+        &_logo
+            margin-top: 15px
+        &_phone
+            margin-top: 10px
+            font-size: 12px
+        &_btn
+            margin-top: 6px
+            width: 110px
+            height: 22px
+            font-size: 10px
+    .promo
+        min-height: 400px
+        padding: 120px 0 35px 0
+        &_descr
+            display: none
+        &_header
+            font-size: 30px
+            padding: 0 24px
+            line-height: 35px
+        &_subheader
+            font-size: 20px
+            margin-top: 33px
+            padding: 0 10px
+            line-height: 30px
+        &_btn
+            width: 210px
+            height: 50px
+            margin-top: 72px
+        
+    .work            
+        padding: 22px 0 36px 0
+        &_header
+            font-size: 14px
+            margin-top: 15px
+            line-height: 16px
+        &_calce
+            margin: 7px 21px -1px 98px
+            width: 100px
+            height: 100px
+        &_descr
+            width: 100%
+            margin-top: 27px
+            span
+                font-size: 16px
+    .mobile
+        min-height: 320px
+        padding: 25px 0 43px 0
+        &_title
+            margin-top: 14px
+            font-size: 16px
+        &_subtitle
+            margin-top: 9px
+            font-size: 14px
+            line-height: 21px
+        &_item
+            width: 290px
+            height: 254px
+            &_subtitle
+                font-size: 18px
+    .car
+        min-height: 393px
+        padding: 26px 0 31px 0
+        background: none
+        background-color: #070716
+        &_header
+            display: none
+        &_subheader
+            display: none
+        &_descr
+            color: $color_white
+    .requier
+        min-height: 960px
+        padding: 22px 0 30px 0
+        &_header
+            margin-top: 16px
+            font-size: 16px
+        &_title
+            margin-top: 25px
+            font-size: 16px
+        &_list
+            margin-top: 0
+            li
+                margin-top: 5px
+                font-size: 14px
+                &::before
+                    left: -37px
+    .world
+        min-height: 360px
+        padding: 26px 0 30px 0
+        &_header
+            margin-top: 14px
+            font-size: 16px
+        &_subheader
+            margin-top: 11px
+            font-size: 14px
+        &_link
+            margin-top: 211px
+            font-size: 15px
+    .message
+        min-height: 255px
+        padding: 24px 0 30px 0
+        &_diving
+            width: 253px
+            height: 4px
+        &_links
+            margin-top: 22px
+            width: 286px
+        &_wrapperTwo
+            flex-wrap: wrap
+        &_link
+            &_grey
+                font-size: 13px
+                line-height: 8px 
+        &_wrapper
+                top: 162px
+                left: 77px
+                margin-top: 17px  
+        &_app
+            width: 260px
+            top: 216px
+            right: 48px
+            margin: 0 auto
+            margin-top: 16px        
+
+
+
+
+
+
+                        
+                        
+    
+
+
+
+
